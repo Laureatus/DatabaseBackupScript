@@ -29,4 +29,6 @@ trgConStr='Server=ServerAddress;Database=DataBase;Uid=Username;Pwd=Password;'
 logPath='/path/to/dict'
 ```
 
-#### Work in Progress ...
+## Activity Diagram
+![Untitled Diagram drawio](https://github.com/Laureatus/DatabaseBackupScript/assets/47870802/a8aed9d9-6a0b-4c90-9371-42e2bda35798)
+
