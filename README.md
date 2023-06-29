@@ -4,6 +4,8 @@
 
 # Database Backup Script
 
+## Projektbeschrieb
+
 Wir werden ein Script erstellen, welches in der Lage ist, den Inhalt einer Datenbank zu fetchen und anschliessend die erhaltenen Daten auf eine andere backup Datenbank hochzuladen. Die Datenbanken sollten über ein config file an das Script übergeben werden und alle outputs und errors werden in einem Log file festgehalten.
 
 ### Muss:
@@ -19,5 +21,12 @@ Wir werden ein Script erstellen, welches in der Lage ist, den Inhalt einer Daten
 - Config file ist optional und kann mit Parametern ersetzt werden
 - Auswahl von Spalten/Zeilen möglich
 
+## Config File Beschreibung
+
+```
+srcConStr='Server=ServerAddress;Database=DataBase;Uid=Username;Pwd=Password;'
+trgConStr='Server=ServerAddress;Database=DataBase;Uid=Username;Pwd=Password;'
+logPath='/path/to/dict'
+```
 
 #### Work in Progress ...
