@@ -1,419 +1,354 @@
-INSERT INTO `ethnicity` (`ethnicity`)
-VALUES
-    ("black"),
-    ("Asian"),
-    ("white");
+insert into regalreihe (reihe_id) values (1);
+insert into regalreihe (reihe_id) values (2);
 
-INSERT INTO `plz` (`plz`,`ort`)
-VALUES
-  (1000,"Nordrhein-Westphalen"),
-  (1001,"Baden Württemberg"),
-  (1002,"Niedersachsen"),
-  (1003,"Hessen"),
-  (1004,"Nordrhein-Westphalen"),
-  (1005,"Rheinland-Pfalz"),
-  (1006,"Baden Württemberg"),
-  (1007,"Hamburg"),
-  (1008,"Rheinland-Pfalz"),
-  (1009,"Schleswig-Holstein"),
-  (1010,"Hamburg"),
-  (1011,"Mecklenburg-Vorpommern"),
-  (1012,"Baden Württemberg"),
-  (1013,"Niedersachsen"),
-  (1014,"Nordrhein-Westphalen"),
-  (1015,"Brandenburg"),
-  (1016,"Bremen"),
-  (1017,"Sachsen"),
-  (1018,"Mecklenburg-Vorpommern"),
-  (1019,"Bremen"),
-  (1020,"Rheinland-Pfalz"),
-  (1021,"Sachsen-Anhalt"),
-  (1022,"Hessen"),
-  (1023,"Hamburg"),
-  (1024,"Rheinland-Pfalz"),
-  (1025,"Bayern"),
-  (1026,"Berlin"),
-  (1027,"Sachsen-Anhalt"),
-  (1028,"Hamburg"),
-  (1029,"Hessen"),
-  (1030,"Hamburg"),
-  (1031,"Saarland"),
-  (1032,"Berlin"),
-  (1033,"Niedersachsen"),
-  (1034,"Berlin"),
-  (1035,"Bayern"),
-  (1036,"Hessen"),
-  (1037,"Hessen"),
-  (1038,"Niedersachsen"),
-  (1039,"Saarland"),
-  (1040,"Niedersachsen"),
-  (1041,"Rheinland-Pfalz"),
-  (1042,"Bremen"),
-  (1043,"Saarland"),
-  (1044,"Berlin"),
-  (1045,"Hessen"),
-  (1046,"Bayern"),
-  (1047,"Sachsen-Anhalt"),
-  (1048,"Baden Württemberg"),
-  (1049,"Saarland"),
-  (1050,"Sachsen-Anhalt"),
-  (1051,"Hessen"),
-  (1052,"Schleswig-Holstein"),
-  (1053,"Bayern"),
-  (1054,"Bremen"),
-  (1055,"Sachsen"),
-  (1056,"Hessen"),
-  (1057,"Saarland"),
-  (1058,"Hamburg"),
-  (1059,"Hamburg"),
-  (1060,"Berlin"),
-  (1061,"Baden Württemberg"),
-  (1062,"Bayern"),
-  (1063,"Sachsen"),
-  (1064,"Berlin"),
-  (1065,"Hamburg"),
-  (1066,"Niedersachsen"),
-  (1067,"Saarland"),
-  (1068,"Mecklenburg-Vorpommern"),
-  (1069,"Nordrhein-Westphalen"),
-  (1070,"Saarland"),
-  (1071,"Saarland"),
-  (1072,"Bayern"),
-  (1073,"Niedersachsen"),
-  (1074,"Mecklenburg-Vorpommern"),
-  (1075,"Hamburg"),
-  (1076,"Bremen"),
-  (1077,"Berlin"),
-  (1078,"Sachsen"),
-  (1079,"Hamburg"),
-  (1080,"Sachsen"),
-  (1081,"Brandenburg"),
-  (1082,"Sachsen-Anhalt"),
-  (1083,"Sachsen-Anhalt"),
-  (1084,"Schleswig-Holstein"),
-  (1085,"Rheinland-Pfalz"),
-  (1086,"Nordrhein-Westphalen"),
-  (1087,"Baden Württemberg"),
-  (1088,"Bremen"),
-  (1089,"Bayern"),
-  (1090,"Saarland"),
-  (1091,"Hamburg"),
-  (1092,"Niedersachsen"),
-  (1093,"Rheinland-Pfalz"),
-  (1094,"Berlin"),
-  (1095,"Mecklenburg-Vorpommern"),
-  (1096,"Rheinland-Pfalz"),
-  (1097,"Sachsen-Anhalt"),
-  (1098,"Hamburg"),
-  (1099,"Baden Württemberg");
+insert into regal (regal_id, reihe_id) values (1, 1);
+insert into regal (regal_id, reihe_id) values (2, 1);
+insert into regal (regal_id, reihe_id) values (3, 1);
+insert into regal (regal_id, reihe_id) values (4, 1);
+insert into regal (regal_id, reihe_id) values (5, 1);
 
-INSERT INTO `address` (`plz`,`address`)
-VALUES
-  (1000,"Ap #311-7423 Quisque Ave"),
-  (1001,"780-6266 Donec Avenue"),
-  (1002,"8098 Consectetuer Rd."),
-  (1003,"370-8510 Molestie Ave"),
-  (1004,"P.O. Box 330, 1384 Duis Rd."),
-  (1005,"244-7275 Magna. Rd."),
-  (1006,"679-555 Proin St."),
-  (1007,"P.O. Box 610, 5184 Vivamus St."),
-  (1008,"298-1928 Facilisis Avenue"),
-  (1009,"756-3348 Consectetuer Rd."),
-  (1010,"Ap #979-5982 Mattis. Road"),
-  (1011,"Ap #377-8779 Aliquam Rd."),
-  (1012,"Ap #697-904 Ultrices. Road"),
-  (1013,"Ap #731-9425 Orci Street"),
-  (1014,"202-2388 Posuere Road"),
-  (1015,"Ap #226-4289 Amet Rd."),
-  (1016,"4932 Sed St."),
-  (1017,"P.O. Box 713, 1729 Dui. Road"),
-  (1018,"Ap #610-4162 In Ave"),
-  (1019,"5278 Blandit Street"),
-  (1020,"Ap #547-5177 A Rd."),
-  (1021,"Ap #202-9468 Faucibus Ave"),
-  (1022,"210-4647 Non Rd."),
-  (1023,"955-6921 Pretium Road"),
-  (1024,"774-8801 Pharetra. St."),
-  (1025,"293-293 Neque Street"),
-  (1026,"P.O. Box 771, 8057 Sapien. St."),
-  (1027,"9389 Velit Road"),
-  (1028,"856-2493 Orci. St."),
-  (1029,"P.O. Box 487, 1854 Donec Ave"),
-  (1030,"Ap #883-7958 Sed Rd."),
-  (1031,"P.O. Box 799, 8770 Malesuada Rd."),
-  (1032,"6866 Consectetuer Street"),
-  (1033,"8948 Quam Rd."),
-  (1034,"P.O. Box 874, 7617 Pellentesque Av."),
-  (1035,"Ap #583-7744 Placerat. St."),
-  (1036,"949-3453 Luctus Ave"),
-  (1037,"800-3440 Integer Rd."),
-  (1038,"9964 Duis Avenue"),
-  (1039,"9364 Pellentesque, Ave"),
-  (1040,"213 Ullamcorper Road"),
-  (1041,"994-2121 Sapien, Street"),
-  (1042,"488-1985 Ligula. Rd."),
-  (1043,"143-1381 Aliquam, Rd."),
-  (1044,"412-5056 Egestas. Road"),
-  (1045,"1300 Et St."),
-  (1046,"189-7797 Vel Ave"),
-  (1047,"4765 Dolor Rd."),
-  (1048,"Ap #946-8293 Hendrerit. Road"),
-  (1049,"389-5378 Neque. St."),
-  (1050,"771-1214 Mattis Ave"),
-  (1051,"Ap #473-3257 Pellentesque Avenue"),
-  (1052,"P.O. Box 749, 3526 Ipsum Avenue"),
-  (1053,"1384 Aliquet Rd."),
-  (1054,"4676 Nostra, Av."),
-  (1055,"1009 Elementum, Ave"),
-  (1056,"Ap #184-9942 Orci. St."),
-  (1057,"586-3455 Molestie Avenue"),
-  (1058,"7469 Suspendisse Street"),
-  (1059,"P.O. Box 219, 387 Adipiscing Av."),
-  (1060,"P.O. Box 575, 1763 Gravida St."),
-  (1061,"3966 Donec Street"),
-  (1062,"P.O. Box 306, 4285 Neque Avenue"),
-  (1063,"P.O. Box 239, 1648 Bibendum Road"),
-  (1064,"P.O. Box 602, 8170 Molestie Av."),
-  (1065,"P.O. Box 744, 983 Erat Av."),
-  (1066,"Ap #776-4778 Interdum Ave"),
-  (1067,"Ap #205-5625 Montes, Rd."),
-  (1068,"P.O. Box 565, 4475 Dolor Av."),
-  (1069,"Ap #118-4820 Morbi Rd."),
-  (1070,"Ap #786-8109 At, Av."),
-  (1071,"Ap #709-8612 Ipsum Ave"),
-  (1072,"Ap #780-2282 Consequat, Rd."),
-  (1073,"Ap #216-2435 Ornare Rd."),
-  (1074,"196-6509 Nullam St."),
-  (1075,"729-7234 Dui, St."),
-  (1076,"Ap #384-1523 Non, St."),
-  (1077,"Ap #580-3336 Vitae Rd."),
-  (1078,"7696 Posuere Av."),
-  (1079,"Ap #617-1939 Non Avenue"),
-  (1080,"P.O. Box 566, 1868 Luctus St."),
-  (1081,"7325 Erat St."),
-  (1082,"Ap #102-2352 Proin Rd."),
-  (1083,"7566 Duis Road"),
-  (1084,"6089 Mi Rd."),
-  (1085,"Ap #887-9650 Nec Avenue"),
-  (1086,"325-6690 Sem Street"),
-  (1087,"Ap #552-1222 Sem Ave"),
-  (1088,"P.O. Box 485, 8724 Sed, Av."),
-  (1089,"Ap #479-3385 Ac Ave"),
-  (1090,"9809 Aliquet, Ave"),
-  (1091,"Ap #712-6832 Nisi. Av."),
-  (1092,"609-4353 Mauris Av."),
-  (1093,"Ap #635-3974 In Street"),
-  (1094,"Ap #960-5450 Parturient Rd."),
-  (1095,"255-4199 Proin Rd."),
-  (1096,"Ap #849-6766 Tellus St."),
-  (1097,"327-6898 Integer Rd."),
-  (1098,"992-8953 Rutrum Road"),
-  (1099,"Ap #117-5118 Cursus. St.");
+insert into regal (regal_id, reihe_id) values (6, 2);
+insert into regal (regal_id, reihe_id) values (7, 2);
+insert into regal (regal_id, reihe_id) values (8, 2);
+insert into regal (regal_id, reihe_id) values (9, 2);
+insert into regal (regal_id, reihe_id) values (10, 2);
 
+insert into tablar (regal_id, tablar_id) values (1, 1);
+insert into tablar (regal_id, tablar_id) values (1, 2);
+insert into tablar (regal_id, tablar_id) values (1, 3);
+insert into tablar (regal_id, tablar_id) values (1, 4);
+insert into tablar (regal_id, tablar_id) values (1, 5);
+insert into tablar (regal_id, tablar_id) values (1, 6);
+insert into tablar (regal_id, tablar_id) values (1, 7);
+insert into tablar (regal_id, tablar_id) values (1, 8);
+insert into tablar (regal_id, tablar_id) values (1, 9);
+insert into tablar (regal_id, tablar_id) values (1, 10);
 
-INSERT INTO `crime` (`crime`,`sentence`,`victim`,`location`,`weapon`)
-VALUES
-  ("DUI",11,"Dane Hurst","592-1602 Placerat. St.","Spoon"),
-  ("Armed Robbery",12,"Jermaine Hall","320-3901 Magna. Rd.","Apache Attack Helicopter"),
-  ("Hatespeech",4,"Justin Riggs","Ap #559-3070 Cursus, Street","AK-47"),
-  ("Phedophilia",8,"Raya Buckley","Ap #562-6172 Urna, Avenue","Apache Attack Helicopter"),
-  ("Rape",3,"Fredericka Casey","3355 Mi St.","Flamethrower"),
-  ("Armed Robbery",7,"Lacota Willis","564-8020 Arcu St.","Flamethrower"),
-  ("Rape",15,"Wade Price","273-1671 Ullamcorper St.","Rope"),
-  ("Phedophilia",15,"Ina Acevedo","Ap #776-2000 Aenean Road","Kitchen Knife"),
-  ("Phedophilia",8,"Jessica Hamilton","Ap #958-880 Ornare Rd.","Razorblade"),
-  ("Hatespeech",3,"Lance Mack","784-6524 Malesuada. Rd.","Spoon"),
-  ("Robbery",14,"Neve Koch","P.O. Box 794, 2352 Tellus St.","P-99"),
-  ("Rape",16,"Stone Mcleod","923-5366 Nullam Rd.","Tank"),
-  ("Murder",2,"Wesley Greene","P.O. Box 918, 2690 Diam Av.","MP5"),
-  ("Fraud",5,"Kaseem Davenport","112-5963 Ultricies Rd.","P-99"),
-  ("Sexual Assault",22,"Dai Roberts","5736 Facilisis. Street","Flamethrower"),
-  ("Fraud",14,"Clayton Page","590-5971 Enim. Rd.","Spoon"),
-  ("Fraud",24,"Hayes Russo","P.O. Box 555, 9281 Adipiscing St.","MP5"),
-  ("Stalking",8,"Zelenia Boyle","Ap #796-5597 Sagittis Av.","P-99"),
-  ("Robbery",3,"Lance Rosa","P.O. Box 698, 4552 Integer Rd.","P-99"),
-  ("Stalking",16,"Mallory Campbell","Ap #587-7832 Lorem Road","Spoon"),
-  ("Robbery",1,"Thor Adams","Ap #439-4241 Lorem Street","Apache Attack Helicopter"),
-  ("Murder",15,"Callie Gay","Ap #130-8170 Convallis Road","Apache Attack Helicopter"),
-  ("Sexual Assault",2,"Melvin Conrad","4087 Enim, Road","Gun"),
-  ("Stalking",19,"Clark Morris","Ap #653-1891 Vitae, Street","AK-47"),
-  ("Sexual Assault",22,"Malik Bush","9851 Lectus Rd.","AK-47"),
-  ("War Crimes",19,"Prescott Carney","943-9658 Ac St.","AK-47"),
-  ("Rape",21,"Ivory Robinson","412-3449 Nonummy Ave","Rope"),
-  ("Rape",20,"Maxwell Anderson","3107 Accumsan Rd.","Gun"),
-  ("Murder",22,"James Pruitt","P.O. Box 955, 3399 Duis Street","MP5"),
-  ("Fraud",19,"Asher William","Ap #214-4807 Libero Rd.","Spoon"),
-  ("Stalking",21,"Steel Cannon","Ap #998-4601 Arcu. Avenue","Tank"),
-  ("Public Urinating",20,"Grant Stewart","6423 Feugiat Rd.","Knife"),
-  ("Phedophilia",19,"Nissim Patterson","P.O. Box 569, 931 Nam Ave","AK-47"),
-  ("Armed Robbery",21,"Rooney Hendrix","Ap #614-750 Consectetuer St.","AK-47"),
-  ("Robbery",3,"Lucius Mendez","262-3658 Magna Av.","Kitchen Knife"),
-  ("DUI",2,"Seth Battle","770-9071 Dis St.","P-99"),
-  ("Rape",9,"Linus Sargent","568-557 Iaculis Rd.","Luger"),
-  ("Robbery",24,"Hop Mendoza","Ap #734-6616 A Av.","Gun"),
-  ("Phedophilia",7,"Mona Williams","P.O. Box 623, 4240 Non, Ave","Tank"),
-  ("Rape",4,"Deanna Lindsay","Ap #639-5675 Facilisis Avenue","Spoon"),
-  ("Hacking",9,"Sonya Raymond","Ap #262-6616 Enim. Ave","Razorblade"),
-  ("Public Urinating",8,"Rhea Fernandez","5089 Sed Street","AK-47"),
-  ("Phedophilia",16,"Gregory Franks","Ap #819-6807 Proin Rd.","Spoon"),
-  ("Public Urinating",8,"Abel Warner","P.O. Box 758, 4366 Eget, St.","Flamethrower"),
-  ("Rape",12,"Wanda Miller","Ap #562-7517 Sed, Road","Gun"),
-  ("Stalking",3,"Sierra Holloway","Ap #758-8239 Lectus St.","Spoon"),
-  ("DUI",15,"Daniel Gregory","Ap #682-2283 Laoreet Rd.","Gun"),
-  ("War Crimes",3,"Patrick Greer","5889 Nec Street","Rope"),
-  ("Public Urinating",21,"Kitra Nichols","270-8064 Ac Road","Razorblade"),
-  ("Hacking",19,"Leo Larsen","2305 Eu Road","Gun"),
-  ("Robbery",18,"Eliana Allison","2182 Dictum Rd.","Apache Attack Helicopter"),
-  ("DUI",14,"Nicholas Norris","Ap #291-360 Odio. Rd.","Spoon"),
-  ("Murder",9,"Acton Sexton","P.O. Box 538, 7372 Convallis Rd.","Gun"),
-  ("DUI",24,"Caryn Hansen","870-5835 Lectus. St.","AK-47"),
-  ("Stalking",22,"Ursula Todd","Ap #383-8932 Aliquam St.","Razorblade"),
-  ("Hacking",1,"Petra Burks","7183 Lorem St.","AK-47"),
-  ("War Crimes",8,"Jeanette Vance","709-6125 Ut, Av.","Knife"),
-  ("Robbery",9,"Alden O'brien","9309 Eget St.","Tank"),
-  ("Hacking",4,"Conan Rosario","Ap #935-7023 Donec Rd.","Kitchen Knife"),
-  ("Public Urinating",21,"Geoffrey Frost","P.O. Box 755, 3420 Metus. St.","MP5"),
-  ("Murder",21,"Jerry Sanders","Ap #452-2443 Dictum Rd.","Gun"),
-  ("Hatespeech",22,"Leilani Blake","572-2662 Donec Av.","P-99"),
-  ("War Crimes",12,"Francis Dixon","401-8840 Amet, Rd.","P-99"),
-  ("Murder",14,"Venus Rice","Ap #907-1231 Adipiscing Rd.","Rope"),
-  ("Phedophilia",15,"Dillon Estes","Ap #695-1300 Elementum Rd.","P-99"),
-  ("Armed Robbery",1,"Erich Diaz","Ap #536-4580 Tincidunt Av.","Spoon"),
-  ("Murder",6,"Hu Middleton","871-6551 Lectus Rd.","Apache Attack Helicopter"),
-  ("DUI",24,"Vera Stanton","5106 Lacus. Rd.","Tank"),
-  ("DUI",21,"Kitra Duffy","288-9611 Egestas Street","MP5"),
-  ("Fraud",2,"Noel Glenn","P.O. Box 295, 2607 Vivamus Road","Apache Attack Helicopter"),
-  ("Robbery",4,"Zachery White","685-5548 A, Rd.","Gun"),
-  ("War Crimes",6,"Fatima Reynolds","828-1835 Eget Road","Razorblade"),
-  ("Stalking",13,"Jana Foreman","410-9703 Nec St.","Rope"),
-  ("Hatespeech",11,"Kennan Stanton","1877 Consequat Street","Gun"),
-  ("Armed Robbery",8,"Chase Stafford","269-6801 Integer Rd.","Luger"),
-  ("Murder",21,"Avram Mack","Ap #577-6642 Erat. St.","MP5"),
-  ("Fraud",2,"Jakeem French","Ap #702-5176 Facilisi. Rd.","Gun"),
-  ("DUI",1,"Gray Williams","632-7505 Aliquet Street","Knife"),
-  ("Hatespeech",24,"Wynter David","235-4657 Ridiculus Av.","Spoon"),
-  ("Robbery",18,"Sean Walker","Ap #418-2178 Ac Rd.","MP5"),
-  ("War Crimes",19,"Charlotte Davidson","Ap #323-5100 Dignissim Road","AK-47"),
-  ("Hacking",14,"Hilel Meyers","P.O. Box 266, 4244 Rutrum St.","Spoon"),
-  ("Rape",11,"Eaton Kim","Ap #713-1852 Lectus Avenue","Flamethrower"),
-  ("Public Urinating",4,"Alyssa Wiggins","4044 Nulla Road","P-99"),
-  ("Rape",20,"Moses Moreno","Ap #973-1287 Sed St.","Apache Attack Helicopter"),
-  ("Stalking",2,"Abigail Powell","Ap #128-6936 Duis Avenue","Luger"),
-  ("Hacking",2,"Cecilia Suarez","9050 Odio. Road","Spoon"),
-  ("Rape",24,"Leandra Arnold","Ap #841-5515 Est. Av.","AK-47"),
-  ("DUI",25,"Norman Blair","252-5880 Adipiscing, Rd.","MP5"),
-  ("Robbery",11,"Robert Reynolds","126-7312 Risus. Av.","Apache Attack Helicopter"),
-  ("Sexual Assault",15,"Kiona Conway","982-2528 Enim Street","AK-47"),
-  ("Fraud",23,"Irene Conner","609-2750 Orci St.","P-99"),
-  ("Fraud",16,"Orson Mcmahon","P.O. Box 695, 3165 Sem Avenue","MP5"),
-  ("War Crimes",6,"Abel Kennedy","P.O. Box 386, 4395 Risus. Road","Razorblade"),
-  ("Robbery",9,"Cathleen Farley","430-5745 Scelerisque St.","Luger"),
-  ("Murder",6,"Hop Whitney","1101 Non Ave","Rope"),
-  ("Sexual Assault",22,"Anthony Cantrell","Ap #464-401 Tellus Street","P-99"),
-  ("War Crimes",6,"Dustin Cross","Ap #329-2270 Vehicula. Av.","AK-47"),
-  ("Robbery",1,"Mary Stevenson","P.O. Box 758, 3578 Fringilla Ave","Rope"),
-  ("Armed Robbery",12,"Blake Hunt","901-5541 Quis Road","AK-47");
+insert into tablar (regal_id, tablar_id) values (2, 11);
+insert into tablar (regal_id, tablar_id) values (2, 12);
+insert into tablar (regal_id, tablar_id) values (2, 13);
+insert into tablar (regal_id, tablar_id) values (2, 14);
+insert into tablar (regal_id, tablar_id) values (2, 15);
+insert into tablar (regal_id, tablar_id) values (2, 16);
+insert into tablar (regal_id, tablar_id) values (2, 17);
+insert into tablar (regal_id, tablar_id) values (2, 18);
+insert into tablar (regal_id, tablar_id) values (2, 19);
+insert into tablar (regal_id, tablar_id) values (2, 20);
 
+insert into tablar (regal_id, tablar_id) values (3, 21);
+insert into tablar (regal_id, tablar_id) values (3, 22);
+insert into tablar (regal_id, tablar_id) values (3, 23);
+insert into tablar (regal_id, tablar_id) values (3, 24);
+insert into tablar (regal_id, tablar_id) values (3, 25);
+insert into tablar (regal_id, tablar_id) values (3, 26);
+insert into tablar (regal_id, tablar_id) values (3, 27);
+insert into tablar (regal_id, tablar_id) values (3, 28);
+insert into tablar (regal_id, tablar_id) values (3, 29);
+insert into tablar (regal_id, tablar_id) values (3, 30);
 
-INSERT INTO `criminals` (`address_id`,`crime_id`,`ethnicity_id`,`first_name`,`last_name`,`age`,`height`,`weight`)
-VALUES
-  (1,1,1,"Orlando","Cole",52,161,124),
-  (2,2,2,"Robin","Herring",28,171,149),
-  (3,3,3,"Yasir","Melton",49,184,102),
-  (4,4,1,"Katell","Lyons",59,180,140),
-  (5,5,1,"Callum","Reyes",49,201,125),
-  (6,6,1,"Gage","Atkins",78,163,115),
-  (7,7,2,"Jordan","Lloyd",46,174,84),
-  (8,8,1,"William","Kelly",70,180,73),
-  (9,9,2,"Mia","Mendoza",20,186,75),
-  (10,10,2,"Avram","Chen",58,195,130),
-  (11,11,2,"Erica","Bradshaw",78,177,140),
-  (12,12,2,"Wanda","Forbes",89,176,81),
-  (13,13,2,"Wilma","Gardner",66,163,90),
-  (14,14,2,"Abra","Bray",84,193,95),
-  (15,15,2,"Briar","Sawyer",33,162,131),
-  (16,16,2,"Violet","Savage",63,180,115),
-  (17,17,2,"Jerome","Lopez",70,170,89),
-  (18,18,2,"Kirby","Edwards",78,164,112),
-  (19,19,2,"Lila","Oliver",72,163,140),
-  (20,20,2,"Aiko","Stark",68,180,91),
-  (21,21,2,"Mohammad","Rivera",49,173,140),
-  (22,22,2,"Zahir","Bond",25,176,83),
-  (23,23,2,"Malik","Mccoy",74,150,69),
-  (24,24,2,"Palmer","Serrano",43,183,148),
-  (25,25,1,"Marah","Hansen",33,187,137),
-  (26,26,2,"Calvin","Morse",67,173,108),
-  (27,27,2,"Katell","Guthrie",71,166,100),
-  (28,28,2,"Haviva","Roman",86,198,139),
-  (29,29,3,"Charde","Maddox",59,158,86),
-  (30,30,1,"Abdul","Dillard",41,170,81),
-  (31,31,1,"Malachi","Pittman",71,196,88),
-  (32,32,1,"Adrienne","Dalton",72,155,107),
-  (33,33,1,"Tamekah","Blankenship",32,159,56),
-  (34,34,1,"Curran","Cain",61,188,86),
-  (35,35,1,"Kevin","Orr",69,205,121),
-  (36,36,1,"Scarlett","Joyce",77,177,52),
-  (37,37,1,"Austin","Workman",43,159,109),
-  (38,38,1,"Hermione","Griffith",85,174,81),
-  (39,39,1,"Urielle","Suarez",27,153,70),
-  (40,40,1,"Holly","Fox",80,198,108),
-  (41,41,1,"Constance","Hoffman",86,162,103),
-  (42,42,1,"Jamal","Chaney",40,189,92),
-  (43,43,1,"Alexis","Higgins",38,164,100),
-  (44,44,3,"Hu","Moran",50,199,68),
-  (45,45,3,"Cherokee","Benton",54,199,122),
-  (46,46,3,"Lael","Leach",28,179,98),
-  (47,47,3,"Glenna","Fox",67,191,103),
-  (48,48,3,"Teegan","Cummings",88,200,87),
-  (49,49,3,"Uriah","Dillard",33,196,75),
-  (50,50,3,"Aaron","Barnes",60,187,94),
-  (51,51,3,"Travis","Chavez",48,164,115),
-  (52,52,3,"Phillip","Simmons",35,193,92),
-  (53,53,3,"Neville","Olsen",61,178,115),
-  (54,54,3,"Alfonso","Joyner",56,158,65),
-  (55,55,3,"Mohammad","Trujillo",81,163,134),
-  (56,56,3,"Macon","Parker",89,196,95),
-  (57,57,3,"Montana","Vinson",79,164,80),
-  (58,58,3,"Keane","Daniels",73,173,130),
-  (59,59,3,"Phillip","Sykes",45,172,96),
-  (60,60,3,"Bo","Bush",81,200,93),
-  (61,61,3,"Ashely","Cooper",53,202,102),
-  (62,62,3,"Gloria","Glass",36,199,147),
-  (63,63,3,"Chiquita","Blankenship",59,206,135),
-  (64,64,3,"Chaim","Gillespie",48,209,56),
-  (65,65,3,"Lysandra","Melendez",69,151,83),
-  (66,66,3,"Adrian","Cote",84,178,57),
-  (67,67,3,"Colorado","Prince",25,166,118),
-  (68,68,3,"Erin","Holden",41,198,143),
-  (69,69,3,"Emerson","Hurst",62,207,62),
-  (70,70,3,"Myra","Clark",49,152,94),
-  (71,71,3,"Alec","Rollins",37,186,143),
-  (72,72,3,"Dennis","Oneal",62,171,65),
-  (73,73,1,"Ciara","Peterson",55,188,106),
-  (74,74,1,"Amanda","Faulkner",29,162,150),
-  (75,75,1,"Dai","Murphy",64,202,149),
-  (76,76,1,"Helen","Phillips",24,160,91),
-  (77,77,1,"Victor","Daugherty",37,186,135),
-  (78,78,1,"Kasper","Barr",76,182,65),
-  (79,79,1,"Noah","Lara",76,198,134),
-  (80,80,1,"Briar","Hunter",29,188,76),
-  (81,81,1,"Pamela","Melendez",83,199,74),
-  (82,82,1,"Zachery","Brewer",37,174,141),
-  (83,83,1,"Nichole","Edwards",80,164,70),
-  (84,84,1,"Mikayla","Sykes",33,181,81),
-  (85,85,1,"Fritz","Mcneil",51,178,103),
-  (86,86,1,"Christen","Dudley",19,180,89),
-  (87,87,1,"Robin","Petersen",49,207,139),
-  (88,88,1,"Susan","Finch",68,193,72),
-  (89,89,1,"Emerald","Cantrell",60,173,136),
-  (90,90,1,"Mari","Fleming",31,163,142),
-  (91,91,1,"Otto","Frazier",84,180,135),
-  (92,92,1,"Zeph","Kramer",20,154,126),
-  (93,93,1,"Davis","Burks",79,193,136),
-  (94,94,1,"Len","Hopper",68,199,70),
-  (95,95,1,"Arthur","Brown",23,208,135),
-  (96,96,1,"Cassidy","Booth",35,163,136),
-  (97,97,1,"Scarlet","Morris",20,161,76),
-  (98,98,1,"Phoebe","Owen",40,177,71),
-  (99,99,1,"Amy","Newman",37,209,100),
-  (100,100,1,"Elmo","Chaney",73,182,61);
+insert into tablar (regal_id, tablar_id) values (4, 31);
+insert into tablar (regal_id, tablar_id) values (4, 32);
+insert into tablar (regal_id, tablar_id) values (4, 33);
+insert into tablar (regal_id, tablar_id) values (4, 34);
+insert into tablar (regal_id, tablar_id) values (4, 35);
+insert into tablar (regal_id, tablar_id) values (4, 36);
+insert into tablar (regal_id, tablar_id) values (4, 37);
+insert into tablar (regal_id, tablar_id) values (4, 38);
+insert into tablar (regal_id, tablar_id) values (4, 39);
+insert into tablar (regal_id, tablar_id) values (4, 40);
+
+insert into tablar (regal_id, tablar_id) values (5, 41);
+insert into tablar (regal_id, tablar_id) values (5, 42);
+insert into tablar (regal_id, tablar_id) values (5, 43);
+insert into tablar (regal_id, tablar_id) values (5, 44);
+insert into tablar (regal_id, tablar_id) values (5, 45);
+insert into tablar (regal_id, tablar_id) values (5, 46);
+insert into tablar (regal_id, tablar_id) values (5, 47);
+insert into tablar (regal_id, tablar_id) values (5, 48);
+insert into tablar (regal_id, tablar_id) values (5, 49);
+insert into tablar (regal_id, tablar_id) values (5, 50);
+
+insert into tablar (regal_id, tablar_id) values (6, 51);
+insert into tablar (regal_id, tablar_id) values (6, 52);
+insert into tablar (regal_id, tablar_id) values (6, 53);
+insert into tablar (regal_id, tablar_id) values (6, 54);
+insert into tablar (regal_id, tablar_id) values (6, 55);
+insert into tablar (regal_id, tablar_id) values (6, 56);
+insert into tablar (regal_id, tablar_id) values (6, 57);
+insert into tablar (regal_id, tablar_id) values (6, 58);
+insert into tablar (regal_id, tablar_id) values (6, 59);
+insert into tablar (regal_id, tablar_id) values (6, 60);
+
+insert into tablar (regal_id, tablar_id) values (7, 61);
+insert into tablar (regal_id, tablar_id) values (7, 62);
+insert into tablar (regal_id, tablar_id) values (7, 63);
+insert into tablar (regal_id, tablar_id) values (7, 64);
+insert into tablar (regal_id, tablar_id) values (7, 65);
+insert into tablar (regal_id, tablar_id) values (7, 66);
+insert into tablar (regal_id, tablar_id) values (7, 67);
+insert into tablar (regal_id, tablar_id) values (7, 68);
+insert into tablar (regal_id, tablar_id) values (7, 69);
+insert into tablar (regal_id, tablar_id) values (7, 70);
+
+insert into tablar (regal_id, tablar_id) values (8, 71);
+insert into tablar (regal_id, tablar_id) values (8, 72);
+insert into tablar (regal_id, tablar_id) values (8, 73);
+insert into tablar (regal_id, tablar_id) values (8, 74);
+insert into tablar (regal_id, tablar_id) values (8, 75);
+insert into tablar (regal_id, tablar_id) values (8, 76);
+insert into tablar (regal_id, tablar_id) values (8, 77);
+insert into tablar (regal_id, tablar_id) values (8, 78);
+insert into tablar (regal_id, tablar_id) values (8, 79);
+insert into tablar (regal_id, tablar_id) values (8, 80);
+
+insert into tablar (regal_id, tablar_id) values (9, 81);
+insert into tablar (regal_id, tablar_id) values (9, 82);
+insert into tablar (regal_id, tablar_id) values (9, 83);
+insert into tablar (regal_id, tablar_id) values (9, 84);
+insert into tablar (regal_id, tablar_id) values (9, 85);
+insert into tablar (regal_id, tablar_id) values (9, 86);
+insert into tablar (regal_id, tablar_id) values (9, 87);
+insert into tablar (regal_id, tablar_id) values (9, 88);
+insert into tablar (regal_id, tablar_id) values (9, 89);
+insert into tablar (regal_id, tablar_id) values (9, 90);
+
+insert into tablar (regal_id, tablar_id) values (10, 91);
+insert into tablar (regal_id, tablar_id) values (10, 92);
+insert into tablar (regal_id, tablar_id) values (10, 93);
+insert into tablar (regal_id, tablar_id) values (10, 94);
+insert into tablar (regal_id, tablar_id) values (10, 95);
+insert into tablar (regal_id, tablar_id) values (10, 96);
+insert into tablar (regal_id, tablar_id) values (10, 97);
+insert into tablar (regal_id, tablar_id) values (10, 98);
+insert into tablar (regal_id, tablar_id) values (10, 99);
+insert into tablar (regal_id, tablar_id) values (10, 100);
+
+insert into menge (menge_id, masseinheit) values (1, 'kg');
+insert into menge (menge_id, masseinheit) values (2, 'mg');
+insert into menge (menge_id, masseinheit) values (3, 'Liter');
+insert into menge (menge_id, masseinheit) values (4, 'Stück');
+insert into menge (menge_id, masseinheit) values (5, 'ml');
+
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (1, 1, 1, 'Ice Cream - Fudge Bars', '2021-08-31 10:19:19', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (2, 2, 1, 'Wine - Peller Estates Late', '2022-01-26 23:49:19', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (3, 3, 5, 'Beef - Sushi Flat Iron Steak', '2021-09-27 23:49:03', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (4, 4, 3, 'Pastry - Mini French Pastries', '2021-10-12 04:55:42', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (5, 5, 3, 'Jam - Strawberry, 20 Ml Jar', '2021-03-30 09:26:12', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (6, 6, 1, 'Soup - Campbells, Classic Chix', '2021-04-03 04:38:40', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (7, 7, 3, 'Coffee Cup 12oz 5342cd', '2021-10-10 01:51:29', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (8, 8, 1, 'Lettuce - Romaine', '2021-11-13 08:26:00', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (9, 9, 3, 'Ecolab Digiclean Mild Fm', '2021-08-21 10:20:21', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (10, 10, 4, 'Beef - Texas Style Burger', '2021-03-20 09:14:06', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (11, 11, 5, 'Salt - Table', '2021-10-17 18:48:27', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (12, 12, 4, 'Danishes - Mini Raspberry', '2021-05-31 16:37:00', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (13, 13, 2, 'Southern Comfort', '2021-07-31 03:25:05', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (14, 14, 1, 'Butcher Twine 4r', '2021-05-09 16:18:09', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (15, 15, 2, 'Nantucket - Pomegranate Pear', '2021-12-15 14:52:26', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (16, 16, 3, 'Yogurt - Assorted Pack', '2021-05-25 03:13:32', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (17, 17, 5, 'Spoon - Soup, Plastic', '2022-01-16 22:52:09', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (18, 18, 2, 'Bread - French Baquette', '2021-06-15 17:06:09', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (19, 19, 4, 'Veal - Kidney', '2022-01-03 22:43:10', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (20, 20, 2, 'Shiratamako - Rice Flour', '2021-11-21 23:34:57', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (21, 21, 5, 'Pasta - Cappellini, Dry', '2021-04-11 09:28:31', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (22, 22, 1, 'Bread - Multigrain Oval', '2021-08-21 07:48:55', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (23, 23, 2, 'Muffin - Mix - Strawberry Rhubarb', '2021-10-13 04:34:18', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (24, 24, 3, 'Soup - Campbells Mushroom', '2022-01-26 06:09:19', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (25, 25, 1, 'Cheese - Parmesan Cubes', '2021-04-12 23:57:52', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (26, 26, 4, 'Fish - Soup Base, Bouillon', '2021-07-05 20:33:09', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (27, 27, 5, 'Blueberries', '2021-06-02 02:48:24', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (28, 28, 5, 'Crab - Dungeness, Whole, live', '2021-11-01 16:52:42', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (29, 29, 4, 'Chef Hat 20cm', '2021-02-13 06:40:58', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (30, 30, 5, 'Flower - Daisies', '2021-11-15 06:46:50', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (31, 31, 3, 'Bread - Olive Dinner Roll', '2022-01-11 13:00:45', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (32, 32, 5, 'Bread - Roll, Calabrese', '2021-12-24 23:25:17', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (33, 33, 2, 'Muffin Mix - Corn Harvest', '2022-01-05 00:11:51', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (34, 34, 4, 'Pie Filling - Pumpkin', '2021-08-10 20:56:03', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (35, 35, 3, 'Syrup - Kahlua Chocolate', '2021-03-10 20:35:35', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (36, 36, 2, 'Pizza Pizza Dough', '2021-07-24 08:41:57', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (37, 37, 1, 'Beef - Top Butt', '2021-07-31 04:03:48', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (38, 38, 5, 'Dr. Pepper - 355ml', '2021-09-04 21:48:35', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (39, 39, 1, 'Appetizer - Seafood Assortment', '2022-01-06 02:08:26', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (40, 40, 1, 'Water - Tonic', '2021-10-28 21:55:51', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (41, 41, 2, 'Cheese - Grie Des Champ', '2021-03-26 18:42:55', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (42, 42, 2, 'Sugar - Brown, Individual', '2021-06-24 07:00:04', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (43, 43, 2, 'Quail - Whole, Boneless', '2022-01-18 19:14:51', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (44, 44, 2, 'Shrimp - Tiger 21/25', '2021-12-07 00:15:40', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (45, 45, 1, 'Cheese - Brie', '2021-03-29 21:58:11', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (46, 46, 5, 'Quail Eggs - Canned', '2021-09-29 19:21:39', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (47, 47, 3, 'Cheese - Cambozola', '2021-07-30 02:40:09', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (48, 48, 2, 'Wanton Wrap', '2021-09-29 20:54:27', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (49, 49, 4, 'Plate Foam Laminated 9in Blk', '2021-09-03 18:27:04', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (50, 50, 2, 'Wine - Cousino Macul Antiguas', '2021-06-11 11:48:43', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (51, 51, 5, 'Bananas', '2021-05-26 11:12:05', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (52, 52, 3, 'Cheese - Sheep Milk', '2022-01-13 12:39:17', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (53, 53, 4, 'Juice - Ocean Spray Cranberry', '2021-09-26 23:21:58', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (54, 54, 1, 'Coffee Beans - Chocolate', '2021-06-07 21:52:51', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (55, 55, 2, 'Juice - Orange, Concentrate', '2021-12-03 12:57:41', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (56, 56, 5, 'Cheese - Goat', '2021-05-01 12:18:09', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (57, 57, 2, 'Ranchero - Primerba, Paste', '2021-03-06 02:46:05', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (58, 58, 2, 'Foil - 4oz Custard Cup', '2022-01-20 04:18:06', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (59, 59, 5, 'Apple - Fuji', '2021-11-30 18:52:33', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (60, 60, 3, 'Foil Cont Round', '2021-07-31 08:30:13', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (61, 61, 3, 'Pepper - Chipotle, Canned', '2021-05-16 14:33:01', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (62, 62, 4, 'Cactus Pads', '2021-04-14 14:25:46', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (63, 63, 3, 'Snapple - Iced Tea Peach', '2021-05-28 03:20:41', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (64, 64, 5, 'Soup - Campbells Mac N Cheese', '2021-09-13 16:28:10', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (65, 65, 2, 'Wiberg Super Cure', '2021-09-21 00:47:27', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (66, 66, 5, 'Cheese - Gouda Smoked', '2021-12-28 08:14:43', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (67, 67, 3, 'Lemonade - Mandarin, 591 Ml', '2021-12-23 03:11:31', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (68, 68, 4, 'Tomato - Plum With Basil', '2021-05-01 02:12:07', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (69, 69, 2, 'Vermouth - Sweet, Cinzano', '2021-06-20 06:34:50', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (70, 70, 2, 'Wine - Casillero Del Diablo', '2021-04-28 14:29:01', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (71, 71, 4, 'Steamers White', '2022-01-21 21:30:56', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (72, 72, 5, 'Nantuket Peach Orange', '2022-01-25 12:12:39', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (73, 73, 3, 'Tea - Orange Pekoe', '2021-06-13 06:17:38', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (74, 74, 2, 'Oil - Canola', '2022-01-18 00:40:07', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (75, 75, 4, 'Danishes - Mini Cheese', '2021-05-17 13:27:35', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (76, 76, 1, 'Bread - Rosemary Focaccia', '2021-12-04 03:42:10', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (77, 77, 1, 'Cheese Cheddar Processed', '2022-01-16 19:30:45', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (78, 78, 5, 'Food Colouring - Green', '2021-04-05 07:51:10', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (79, 79, 4, 'Apple - Granny Smith', '2021-03-22 05:11:39', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (80, 80, 3, 'Soup - Base Broth Beef', '2021-10-02 01:44:47', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (81, 81, 3, 'Beans - Black Bean, Canned', '2021-02-26 17:14:20', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (82, 82, 1, 'Sour Cream', '2021-08-05 17:47:15', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (83, 83, 3, 'Wine - White Cab Sauv.on', '2021-10-13 11:25:03', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (84, 84, 2, 'Salmon Steak - Cohoe 6 Oz', '2021-11-08 07:58:28', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (85, 85, 3, 'Pepper - Red Thai', '2021-09-01 20:07:50', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (86, 86, 4, 'Lumpfish Black', '2021-12-06 02:05:43', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (87, 87, 4, 'Remy Red Berry Infusion', '2021-02-26 02:29:47', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (88, 88, 3, 'Iced Tea - Lemon, 340ml', '2021-05-26 11:49:41', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (89, 89, 3, 'Celery', '2021-09-06 19:13:27', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (90, 90, 5, 'Fudge - Cream Fudge', '2021-10-30 19:23:27', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (91, 91, 3, 'Chocolate - Milk, Callets', '2021-07-20 03:57:29', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (92, 92, 3, 'Wine - Chardonnay Mondavi', '2021-01-31 16:51:38', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (93, 93, 3, 'Wine - Lou Black Shiraz', '2021-03-01 05:36:16', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (94, 94, 4, 'Cookie Choc', '2021-10-07 10:47:40', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (95, 95, 2, 'Truffle - Whole Black Peeled', '2021-07-23 13:03:29', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (96, 96, 3, 'Bread Crumbs - Japanese Style', '2021-10-31 12:48:15', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (97, 97, 4, 'Mangostein', '2021-08-21 07:18:02', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (98, 98, 4, 'Bar Bran Honey Nut', '2021-08-09 07:25:06', true);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (99, 99, 5, 'Sausage - Andouille', '2021-03-28 05:21:44', false);
+insert into produkt (produkt_id, tablar_id, menge_id, name, ablaufdatum, gekühlt) values (100, 100, 1, 'Trueblue - Blueberry', '2021-06-27 19:48:26', true);
+
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 1, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 2, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 3, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 4, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 5, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 6, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 7, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 8, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 9, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 10, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 11, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 12, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 13, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 14, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 15, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 16, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 17, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 18, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 19, 'Fleisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (1, 20, 'Fleisch');
+
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 21, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 22, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 23, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 24, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 25, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 26, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 27, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 28, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 29, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 30, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 31, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 32, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 33, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 34, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 35, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 36, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 37, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 38, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 39, 'Früchte');
+insert into kategorie (kategorie_id, produkt_id, name) values (2, 40, 'Früchte');
+
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 41, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 42, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 43, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 44, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 45, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 46, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 47, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 48, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 49, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 50, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 51, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 52, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 53, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 54, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 55, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 56, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 57, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 58, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 59, 'Gemüse');
+insert into kategorie (kategorie_id, produkt_id, name) values (3, 60, 'Gemüse');
+
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 51, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 52, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 53, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 54, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 55, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 56, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 57, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 58, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 59, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 60, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 61, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 62, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 63, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 64, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 65, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 66, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 67, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 68, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 69, 'Backwaren');
+insert into kategorie (kategorie_id, produkt_id, name) values (4, 70, 'Backwaren');
+
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 71, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 72, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 73, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 74, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 75, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 76, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 77, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 78, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 79, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 80, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 81, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 82, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 83, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 84, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 85, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 86, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 87, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 88, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 89, 'Fisch');
+insert into kategorie (kategorie_id, produkt_id, name) values (5, 90, 'Fisch');
+
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 91, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 92, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 93, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 94, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 95, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 96, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 97, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 98, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 99, 'Getränke');
+insert into kategorie (kategorie_id, produkt_id, name) values (6, 100, 'Getränke');
+
+insert into mitarbeiter (mitarbeiter_id, kategorie_id, name, vorname) values (1, 1, 'Giacubo', 'Livvie');
+insert into mitarbeiter (mitarbeiter_id, kategorie_id, name, vorname) values (2, 2, 'Pidon', 'Graeme');
+insert into mitarbeiter (mitarbeiter_id, kategorie_id, name, vorname) values (3, 3, 'Cutridge', 'Caitrin');
+insert into mitarbeiter (mitarbeiter_id, kategorie_id, name, vorname) values (4, 4, 'Kisting', 'Friedrich');
+insert into mitarbeiter (mitarbeiter_id, kategorie_id, name, vorname) values (5, 5, 'Monckton', 'Sax');
+insert into mitarbeiter (mitarbeiter_id, kategorie_id, name, vorname) values (6, 6, 'Max', 'Mustermann');
