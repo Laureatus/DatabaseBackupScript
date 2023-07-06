@@ -24,8 +24,13 @@ Wir werden ein Script erstellen, welches in der Lage ist, den Inhalt einer Daten
 ## Config File Beschreibung
 
 ```
-srcConStr='Server=ServerAddress;Database=DataBase;Uid=Username;Pwd=Password;'
-trgConStr='Server=ServerAddress;Database=DataBase;Uid=Username;Pwd=Password;'
+mySqlHost='ServerAddress'
+mySqlPort='ServerPort'
+srcDb='SourceDatabase'
+trgDb='TargetDatabase'
+userName='Username'
+password='Password'
+dbDumpPath='path/to/dict'
 logPath='/path/to/dict'
 ```
 
