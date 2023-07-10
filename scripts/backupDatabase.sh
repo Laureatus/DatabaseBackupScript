@@ -2,15 +2,17 @@
 
 /bin/bash ./databaseDownload.sh
 /bin/bash ./databaseRestore.sh
+source ../backupconfig.conf
 
-if [ $KEEP_DUMP_FILES == "None" ]
+
+if [ "$KEEP_DUMP_FILES" = "None" ]
 then
     echo "Removing dump file"
     rm $BACKUP_DIR/*
-elif [ $KEEP_DUMP_FILES == "All" ]
+elif [ "$KEEP_DUMP_FILES" = "All" ]
 then
     echo "Keeping dump file"
-elif [ $KEEP_DUMP_FILES == "Last" ]
+elif [ "$KEEP_DUMP_FILES" = "Last" ]
 then
     cd $BACKUP_DIR
     ls -t | tail -n +2 | xargs -I {} rm {}
