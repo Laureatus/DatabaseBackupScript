@@ -24,14 +24,16 @@ Wir werden ein Script erstellen, welches in der Lage ist, den Inhalt einer Daten
 ## Config File Beschreibung
 
 ```
-mySqlHost='ServerAddress'
-mySqlPort='ServerPort'
-srcDb='SourceDatabase'
-trgDb='TargetDatabase'
-userName='Username'
-password='Password'
-dbDumpPath='path/to/dict'
-logPath='/path/to/dict'
+HOST='localhost' # The host of your DB
+PORT='3306' # The Port of your DB
+SRC_DB='world' # Name of the DB that should be backed up
+TRG_DB='world_backup' # Name of the DB where the DB dump is imported into
+USER_NAME='root' # Username of the DB user
+PASSWORD='test' # Password of the DB user
+BACKUP_DIR='../database/backups' # Path to the Directory where Dump files are going to be stored
+LOG_PATH='TestLog' # Path where the log file is stored
+KEEP_DUMP_FILES='Last' # Choose if you want to keep the dump files. [All, None, Last]
+DATE=$(date +"%Y-%m-%d_%H-%M-%S") # Date format used for naming the Dump files
 ```
 
 ## Activity Diagram
@@ -44,6 +46,8 @@ Ausserdem muss eine backup datenbank definiert sein, um das Script laufen zu las
 
 Um das script laufen zu lassen, müssen folgende Werte abgefüllt werden:
 
+
+```
 HOST='localhost' # The host of your DB
 PORT='3306' # The Port of your DB
 SRC_DB='world' # Name of the DB that should be backed up
@@ -54,5 +58,5 @@ BACKUP_DIR='../database/backups' # Path to the Directory where Dump files are go
 LOG_PATH='TestLog' # Path where the log file is stored
 KEEP_DUMP_FILES='Last' # Choose if you want to keep the dump files. [All, None, Last]
 DATE=$(date +"%Y-%m-%d_%H-%M-%S") # Date format used for naming the Dump files
-
+```
 Es sollte ausserdem sichergestellt werden, dass der DB user welcher sich mit dem Script auf der DB einloggt, die nötigen Berechtigungen hat, um Dumps zu erstellen und diese zu importieren.
