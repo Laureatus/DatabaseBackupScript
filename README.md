@@ -81,7 +81,7 @@ DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 Es sollte ausserdem sichergestellt werden, dass der DB user welcher sich mit dem Script auf der DB einloggt, die nötigen Berechtigungen hat, um Dumps zu erstellen und diese zu importieren.
 
 
-##Testcases
+## Testcases
 
 Test: Das Script erstellt Backups der angegebenen Datenbank
 Erwartet: Backup wurde erfolgreich erstellt.
