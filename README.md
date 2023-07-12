@@ -79,3 +79,28 @@ KEEP_DUMP_FILES='Last'
 DATE=$(date +"%Y-%m-%d_%H-%M-%S") 
 ```
 Es sollte ausserdem sichergestellt werden, dass der DB user welcher sich mit dem Script auf der DB einloggt, die nötigen Berechtigungen hat, um Dumps zu erstellen und diese zu importieren.
+
+
+##Testcases
+
+Test: Das Script erstellt Backups der angegebenen Datenbank
+Erwartet: Backup wurde erfolgreich erstellt.
+Tatsächlich: Backup wurde erfolgreich erstellt.
+
+Test: Das Script lädt den dump auf der Backup datenbank hoch.
+Erwartet: Dump wird erfolgreich importiert.
+Tatsächlich: Dump wird erfolgreich importiert.
+
+Test: Script löscht alle dumps wenn KEEP_DUMPS auf None gesetzt ist.
+Erwartet: Script löscht alle dumps
+Tatsächlich: Script löscht alle Dumps
+
+Test: Script löscht keine dumps wenn KEEP_DUMPS auf All gesetzt ist.
+Erwartet: Script behält alle dumps
+Tatsächlich: Script behält alle Dumps
+
+Test: Script löscht alle ausser den neusten dump wenn KEEP_DUMPS auf Latest gesetzt ist.
+Erwartet: Script behält den letzten dumps
+Tatsächlich: Script behält den letzten Dumps
+
+
