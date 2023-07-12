@@ -83,6 +83,7 @@ Es sollte ausserdem sichergestellt werden, dass der DB user welcher sich mit dem
 
 ## Testcases
 
+### Test 1
 Test: Das Script erstellt Backups der angegebenen Datenbank
 
 Erwartet: Backup wurde erfolgreich erstellt
@@ -90,7 +91,7 @@ Erwartet: Backup wurde erfolgreich erstellt
 Tatsächlich: Backup wurde erfolgreich erstellt.
 
 
-
+### Test 2
 Test: Das Script lädt den dump auf der Backup datenbank hoch.
 
 Erwartet: Dump wird erfolgreich importiert.
@@ -98,7 +99,7 @@ Erwartet: Dump wird erfolgreich importiert.
 Tatsächlich: Dump wird erfolgreich importiert.
 
 
-
+### Test 3
 Test: Script löscht alle dumps wenn KEEP_DUMPS auf None gesetzt ist.
 
 Erwartet: Script löscht alle dumps
@@ -106,7 +107,7 @@ Erwartet: Script löscht alle dumps
 Tatsächlich: Script löscht alle Dumps
 
 
-
+### Test 4
 Test: Script löscht keine dumps wenn KEEP_DUMPS auf All gesetzt ist.
 
 Erwartet: Script behält alle dumps
@@ -114,7 +115,7 @@ Erwartet: Script behält alle dumps
 Tatsächlich: Script behält alle Dumps
 
 
-
+### Test 5
 Test: Script löscht alle ausser den neusten dump wenn KEEP_DUMPS auf Latest gesetzt ist.
 
 Erwartet: Script behält den letzten dumps
